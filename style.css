@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: black;
+    color: antiquewhite;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#navbar {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo {
+    font-size: 3rem;
+    padding:10px 0 ;
+    cursor: pointer;
+}
+span {
+    color: #0078f9;
+}
+.menu li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 20px;
+}
+.menu li a{
+    color: antiquewhite ;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+}
+.menu li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0078f9;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.menu li a:hover::after{
+    width: 100%;
+    
+}
+#home{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.cover {
+    flex-basis: 50%;
+}
+.cover img{
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+}
+.content {
+    display: block;
+    padding: 20% 10% 0 20%;
+}
+.content h1{
+    color:antiquewhite;
+    margin: 10px 0px 10px 0px;
+    font-size: 4.7rem;
+}
+.content h3 {
+   color: antiquewhite;
+   font-size: 1.875rem; 
+}
+.content h4 {
+    color: #76b3f5;
+    letter-spacing: 2px;
+    font-size: 1.125rem ;
+}
+#about {
+    padding: 180px 0 180px 250px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1 {
+    flex-basis: 35%;
+}
+.col1 img{
+    height: 90%;
+    width: 100%;
+}
+.col2 {
+    flex-basis: 60%;
+    
+}
+.col2 h2{
+    color: #0078f9;
+    font-size: 4.7rem;
+    padding: 50px 0 10px 0;
+}
+.col2 h3{
+    color: aliceblue;
+    padding: 10px 0;
+    font-size: 2rem;
+    letter-spacing: 2px;   
+}
+.col2 p{
+    font-size: 1.5rem;
+    width: 550px;
+    
+}
+.titel {
+    font-weight: bold;
+    text-align: center;
+    color: #0078f9;
+    font-size: 4.7rem;
+    padding: 50px 0 10px 0;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 120px;
+}
+.card {
+    height: 300px;
+    width: 300px;
+    background-color: #3a3a3a7a;
+    text-align: center;
+    border-radius: 20%;
+    padding-top: 10px;
+}
+.card h3{
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-size: 3.125rem;
+    margin: 10px auto;
+    padding: 10px 0px;
+}
+.card h5 {
+    font-size: 1.125rem;
+    letter-spacing: 2px;
+    padding: 10px 0px;
+}
+.card h4 {
+    font-size: 1.5rem;
+    color: #ff00a6;
+    padding: 20px 0px;
+}
+.grade p {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 3px;
+    padding: 20px 0;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.skill-card {
+    background: #2020207a;
+    border-radius: 20px;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    margin: 0px 10px;
+    
+}
+.skill-card img {
+    height: 50px;
+    width: 60px;
+    margin: 20px 0;
+}
+.skill-card h2 {
+    color: #ff00a6;
+    margin: 10px 0;
+}
+.skill-card p {
+    width: auto;
+    height: auto;
+}
+
+.footer {
+    color: #76b3f5;
+    background-color: black;
+    position: relative;
+    width: 100%;
+    padding: 100px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social{
+    display: flex;
+    list-style-type: none;
+    font-size: 40px;
+    
+}
+.social li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+.social li a{
+    color:antiquewhite ;
+    text-decoration: none;
+}
+/*-------------------------------------------Phone---------------------------------------------*/
+@media only screen and (max-width: 1160px) {
+    .box {
+        margin: 0px -50px;
+    }
+    .cover img{
+        height: 100%;
+        width: 150%;
+    }
+}
+@media only screen and (max-width: 900px) {
+   
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar {
+        position: relative;
+        margin: auto;
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        position: relative;
+        margin: auto;
+    
+    }
+    .cover img {
+        display: none;
+    }
+    .content {
+        width: auto;
+        padding: 150px 0px 450px 10px;
+    }
+    #about {
+        padding: 80px 108px ;
+    }
+    .col1 img{
+        height: auto;
+        width: 360px;
+    }
+    .col2 p{
+        width: 340px;
+        
+    }
+    .box{
+        display: inline-block;
+        padding-left: 10%;
+    }
+    .card {
+        height: 250px;
+        width: 250px;
+        background-color: #58a9ff7a;
+        text-align: center;
+        border-radius: 20%;
+        margin-bottom: 20px;
+        margin-left: 150px;
+    }
+    .skill-box {
+        display: block;
+        padding-left: 10%;
+    }
+    .skill-card {
+        max-width: 560px;
+        margin: 30px 0px;
+        
+    }
+}
+@media only screen and (max-width: 500px){
+    .card {
+        margin-left: 110px;
+    }
+    #about {
+        padding: 80px 90px ;
+    }
+    .skill-box {
+        display: block;
+        
+        padding: 10px 20px;
+    }
+    .content {
+        width: auto;
+        padding: 150px 0px 350px 10px;
+    }
+    .col2 h2 {
+        margin-right: 10px;
+    }
+   
+
+}
+@media only screen and (max-width: 400px){
+    .card {
+        margin-left: 20px;
+    }
+    #about {
+        padding: 80px 50px ;
+    }
+  
+
+}
+/*-------------------------------------------------End-----------------------------------------------*/
